@@ -1,0 +1,16 @@
+# Entorno virtual
+weni/
+
+# Archivos sensibles
+.env
+
+# Archivos temporales y empaquetados
+*.zip
+
+# Archivos de sistema/editor
+__pycache__/
+*.pyc
+*.pyo
+*.swp
+.DS_Store
+.vscode/
