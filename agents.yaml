@@ -1,6 +1,6 @@
 agents:
   vtex_order_agent:
-    name: "VTEX Order Agent - Jose David v3"
+    name: "VTEX Order Agent - Jose David v4"
     description: "An assistant that helps users retrieve order information from VTEX in a friendly and efficient manner."
     credentials:
       - VTEX_ACCOUNT:
@@ -34,3 +34,18 @@ agents:
                 type: "string"
                 required: true
                 contact_field: true
+      - cancel_order:
+          name: "Cancel VTEX Order"
+          source:
+            path: "skills/cancel_order"
+            entrypoint: "main.CancelOrder"
+          description: "Skill to cancel a VTEX order using its order ID and a cancellation reason."
+          parameters:
+            - order_id:
+                description: "The unique ID of the order to cancel."
+                type: "string"
+                required: true
+            - reason:
+                description: "The reason for cancelling the order."
+                type: "string"
+                required: true
