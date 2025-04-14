@@ -1,4 +1,10 @@
 tests:
   test_1:
     parameters:
-      order_id: "1524450500157-01"
+      order_id: "1524580503241-01" # Órden con un solo producto
+  test_2:
+    parameters:
+      order_id: "1524630500159-01" # Órden con más de un producto
+  test_3:
+    parameters:
+      order_id: "123456-01" # Órden inexistente
