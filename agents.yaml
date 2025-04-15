@@ -1,6 +1,6 @@
 agents:
   vtex_order_agent:
-    name: "VTEX Order Agent - Jose David v4"
+    name: "VTEX Order Agent - Jose David v7"
     description: "An assistant that helps users retrieve order information from VTEX in a friendly and efficient manner."
     credentials:
       - VTEX_ACCOUNT:

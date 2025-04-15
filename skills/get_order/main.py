@@ -50,6 +50,7 @@ class GetOrder(Skill):
             items_details = []
             for item in items:
                 name = item.get("name", "Unknown product")
+                item_id = item.get("id", "Unknown ID")
                 raw_price = item.get("sellingPrice", 0)
                 price = raw_price / 100.0
                 formatted_price = f"{currency_symbol}{price:,.2f} {currency_code}"
@@ -63,6 +64,7 @@ class GetOrder(Skill):
                 f"The order total is {formatted_total_value}. "
                 f"Shipping cost: {formatted_shipping_cost}. "
                 f"Products: {items_string}. Mystery solved ✅"
+                f"The ID of the item is {item_id}"
             )
             return {"message": message}
 
